@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms--Testing</title>
+  </head>
+  <body>
+    <h1>Test form</h1>
+    <form action="post"></form>
+    <label for="username">Enter your name : </label>
+    <input type="text" id="username" name="username" placeholder="Enter your name" required autofocus>
+    <!--name in input tag helps in parsing data later according to this name as key and entered data as value for this key-value pair-->
+    <br />
+    <label for="password">Enter your password : </label>
+    <input
+      type="password"
+      id="password"
+      name="username"
+      placeholder="Enter password"
+    />
+    <br />
+    <label for="gender">Select your gender : </label>
+    <input type="radio" id="male" name="gender" value="male" />
+    <!--each input tag must have different ids i.e unique ids only, cn thave the same id-->
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="female" />
+    <label for="female">Female</label>
+    <!-- name of both were same indicating that only one can be selected at a time for that name ;
+     If id of label and input tag doesnt match, then on clicking Female you wont be able to select it using the radio buttons -->
+
+    <!-- we generally dont prefer using br tags instead use div tags to creta a seperate blocks for both the inputs seperately , it automatically creates a line break; prefer not to use br tags-->
+    <div>
+      <input type="checkbox" id="t&c" name="t&c" value="yes" />
+      <label for="t&c">Agree to all the terms and conditions</label>
+    </div>
+
+    <div>
+      <textarea name="comments" rows="4" cols="50">Enter comments here....</textarea>
+      <!--rows and columns used to resize the text's area-->
+    </div>
+    <div>
+      <label for="comments">Enter comments:</label>
+      <br />
+      <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+      <!--always when you have label tag there , its for attribute has value as id of the tag for which its labelling for , so we need to mention id same as it is in the texarea tag too here.-->
+    </div>
+
+    <div>
+      <select name="country">
+        <option value="usa">United States</option>
+        <option value="canada">Canada</option>
+      </select>
+    </div>
+  </body>
+</html>

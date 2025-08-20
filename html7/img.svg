@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" height="100" width="100">
+        <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="green"></circle>
+</svg>
+
+<!-- it shows error otherwise if we dont put the xmlns="http://www.w3.org/2000/svg" as its the namespace declaration for svg files , whenever uploading it on the browser : whenevr stuck in such problems just google it and seacrh on websites like stack overflow, etc. for the solution !! -->

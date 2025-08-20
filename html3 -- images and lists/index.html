@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Images_testing</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <img height="230" src="image1.png" alt="Harry bhai pic" />
+
+    <table>
+      <caption>
+        Student Details
+      </caption>
+
+      <thead>
+        <tr>
+        <th>Name</th>
+        <th>Designation</th>
+        <th>Fav_Language</th>
+      </tr>
+    </thead>
+    
+    <tbody>
+        <tr>
+        <td colspan="2">Nischay</td>
+        <!--covers two column space now-->
+        <td>Programmer</td>
+        <td>C++</td>
+      </tr>
+      <tr>
+        <td rowspan="2">Ansh</td>
+        <td>Programmer</td>
+        <td>Java</td>
+      </tr>
+      <tr>
+        <!--<td>Akshaj</td>-->
+        <!--commented out as previous one had 2 rows span , so this would create ambiguity-->
+        <td>Programmer</td>
+        <td>Python</td>
+      </tr>
+    </tbody>
+      
+      <tfoot>
+        <tr>
+            <td>abc_footer</td>
+            <td>xyz_foot</td>
+            <td>pqr_foot</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>

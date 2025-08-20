@@ -1,0 +1,12 @@
+.fruits{
+    color: red;
+}
+
+.vegetables{
+     color: greenyellow;
+}
+
+#firstdiv{
+    background-color: burlywood;
+}
+/*background colour given to that particular id only whereas the colors of text using "color" given to all the elements belonging to that particular class*/
